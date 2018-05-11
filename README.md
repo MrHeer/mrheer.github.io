@@ -1,3 +1,3 @@
 # [mrheer.github.io](https://mrheer.github.io)
 
-![avatar](MrHeerProfile.png)
+<center><img src="MrHeerProfile.png"/></center>
