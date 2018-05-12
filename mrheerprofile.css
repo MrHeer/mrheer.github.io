@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700);
+
+body {
+  font-family: "Playfair Display", georgia, serif;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+h5,
+h6,
+p,
+a {
+  font-style: italic;
+}
+p {
+  text-indent: 2em;
+}
+.head-portrait {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+img {
+  height: 100px;
+}
+.btn {
+  margin-right: 1em;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.card-div {
+  margin: 20px;
+}
+.card {
+  margin: 30px;
+  max-width: 800px;
+  min-width: 200px;
+}
+.container {
+  max-width: 700px;
+}
+footer {
+  margin-top: 80px;
+}
+.footer-text {
+  margin-bottom: 80px;
+}
+.card-active {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transform: translate3d(0, -2px, 0);
+  -ms-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
+.card-no-active {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
