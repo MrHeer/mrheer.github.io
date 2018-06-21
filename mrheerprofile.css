@@ -4,6 +4,10 @@ body {
   font-family: "Playfair Display", georgia, serif;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  background-image: url(background-image.png);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
 }
 h5,
 h6,
