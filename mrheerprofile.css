@@ -42,55 +42,58 @@ body {
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
-h5,
-h6,
-p,
-a {
+h5,h6,p,a {
   font-style: italic;
 }
+
 p {
   text-indent: 2em;
 }
+
 .head-portrait {
   margin-top: 80px;
   margin-bottom: 20px;
 }
+
 img {
   height: 100px;
 }
+
 .btn {
   margin-right: 1em;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+
 .card-div {
   margin: 20px;
 }
+
 .card {
   margin: 30px;
   max-width: 800px;
   min-width: 200px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-.container {
-  max-width: 700px;
-}
-footer {
-  margin-top: 80px;
-}
-.footer-text {
-  margin-bottom: 80px;
-}
-.card-active {
+
+.card:hover {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   -webkit-transform: translate3d(0, -2px, 0);
   -ms-transform: translate3d(0, -2px, 0);
   transform: translate3d(0, -2px, 0);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.075) !important;
 }
-.card-no-active {
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+
+.container {
+  max-width: 700px;
+}
+
+footer {
+  margin-top: 80px;
+}
+
+.footer-text {
+  margin-bottom: 80px;
 }
