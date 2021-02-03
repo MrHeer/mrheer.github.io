@@ -1,5 +1,7 @@
 import React from "react";
-import { Layout } from "components";
+import { Container, Grid, Layout } from "components";
+import { Card } from "blocks";
+import cardData from "cardData";
 
 const { Header, Content, Footer } = Layout;
 
@@ -7,7 +9,17 @@ function App() {
   return (
     <Layout>
       <Header>Header</Header>
-      <Content>Content</Content>
+      <Content>
+        <Container>
+          <Grid container justify="center" spacing={2}>
+            {cardData.map((data) => (
+              <Grid item {...data.gridProps}>
+                <Card data={data} />
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </Content>
       <Footer>Footer</Footer>
     </Layout>
   );

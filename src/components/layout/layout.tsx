@@ -1,13 +1,11 @@
 import React, { FC } from "react";
-import { Container, Grid } from "components";
+import { Grid } from "components";
 
 const Layout: FC = ({ children }) => {
   return (
-    <Container>
-      <Grid container direction="column">
-        {children}
-      </Grid>
-    </Container>
+    <Grid container direction="column">
+      {children}
+    </Grid>
   );
 };
 
