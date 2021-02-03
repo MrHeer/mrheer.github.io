@@ -1,4 +1,5 @@
 import React, { FC, useState } from "react";
+import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import {
   CardActions,
   CardContent,
@@ -10,9 +11,17 @@ import {
 } from "components";
 import { ICardProps } from "./interface";
 
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    detailButton: {
+      marginLeft: "auto",
+    },
+  })
+);
+
 const Card: FC<ICardProps> = ({ data }) => {
   const { title, description, link } = data;
-
+  const classes = useStyles();
   const [raised, setRaised] = useState<boolean>(false);
 
   return (
@@ -26,7 +35,12 @@ const Card: FC<ICardProps> = ({ data }) => {
         <Typography variant="body1">{description}</Typography>
       </CardContent>
       <CardActions>
-        <IconButton aria-label="go to detail" target="_blank" href={link}>
+        <IconButton
+          className={classes.detailButton}
+          aria-label="go to detail"
+          target="_blank"
+          href={link}
+        >
           <GitHub />
         </IconButton>
       </CardActions>
